@@ -1,0 +1,39 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightgrey;
+    height: 100px;
+    width: 80%;
+
+}
+
+.progress-container {
+    background-color: darkgray;
+    border-radius: .5rem;
+    width: 80%;
+    margin: 45px auto;
+
+}
+
+.progress-bar {
+    background-color: rgb(118, 118, 188);
+    height: 15px;
+    border-radius: 1rem;
+    animation: progress 5s infinite;
+
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+        background: rgb(118, 118, 188);
+    }
+
+    100% {
+        width: 100%;
+        background: #990066;
+        box-shadow: 0 0 10px #990066;
+    }
+}
